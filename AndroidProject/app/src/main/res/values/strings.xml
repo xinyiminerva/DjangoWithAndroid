@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ScheduleEvent</string>
+    <string name="other_transition_name">transition_reveal</string>
+    <string name="local_host">http://192.168.1.7:</string>
+</resources>

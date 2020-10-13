@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/splash"-->
+        <!--android:scaleType="centerCrop"/>-->
+
+    <me.wangyuwei.particleview.ParticleView
+        android:id="@+id/splash_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        pv:pv_background_color="#FFF"
+        pv:pv_host_text="Schedule"
+        pv:pv_particle_text="Event"
+        app:pv_host_text_size="48sp"
+        pv:pv_particle_text_size="24sp"
+        pv:pv_text_color="@color/colorPrimaryDark"
+        pv:pv_text_anim_time="800"
+        pv:pv_spread_anim_time="1100"
+        pv:pv_host_text_anim_time="1100">
+
+    </me.wangyuwei.particleview.ParticleView>
+
+</android.support.constraint.ConstraintLayout>

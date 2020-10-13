@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:id="@+id/other_rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@android:color/transparent"
+        tools:context=".AddEventActivity">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/other_fab_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:transitionName="@string/other_transition_name"
+            app:elevation="0dp"
+            app:fabSize="normal"
+            app:pressedTranslationZ="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/other_tv_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:visibility="visible"
+            android:padding="20dp"
+            android:visibility="invisible">
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/edit_parent_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mtf_labelColor="@color/black"
+                app:mtf_image="@drawable/ic_title_grey_700_24dp">
+
+                <EditText
+                    android:id="@+id/edit_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Event Title"
+                    android:textColor="#333"
+                    android:textSize="16sp"/>
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/edit_parent_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:mtf_labelColor="@color/black"
+                app:mtf_image="@drawable/ic_title_grey_700_24dp">
+
+                <EditText
+                    android:id="@+id/edit_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Event Content"
+                    android:textColor="#333"
+                    android:textSize="16sp"/>
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/edit_parent_exp_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:mtf_labelColor="@color/black"
+                app:mtf_image="@drawable/ic_date_range_grey_700_24dp">
+
+                <EditText
+                    android:id="@+id/edit_exp_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Expected Date"
+                    android:inputType="none"
+                    android:textColor="#333"
+                    android:textSize="16sp"/>
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/edit_parent_due_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                app:mtf_labelColor="@color/black"
+                app:mtf_image="@drawable/ic_date_range_grey_700_24dp">
+
+                <EditText
+                    android:id="@+id/edit_due_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Due Date"
+                    android:textColor="#333"
+                    android:inputType="none"
+                    android:textSize="16sp"/>
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/add_event_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape_default_rounded"
+                app:spinning_bar_padding="8dp"
+                app:spinning_bar_color="#fff"
+                android:text="Add Event" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
