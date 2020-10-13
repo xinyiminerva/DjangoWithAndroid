@@ -18,7 +18,6 @@ public class GuiUtils {
         void onRevealShow();
     }
 
-    // 圆圈爆炸效果显示
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public static void animateRevealShow(
             final Context context, final View view,
@@ -29,7 +28,6 @@ public class GuiUtils {
 
         float finalRadius = (float) Math.hypot(view.getWidth(), view.getHeight());
 
-        // 设置圆形显示动画
         Animator anim = ViewAnimationUtils.createCircularReveal(view, cx, cy, startRadius, finalRadius);
         anim.setDuration(300);
         anim.setInterpolator(new AccelerateDecelerateInterpolator());
@@ -49,7 +47,6 @@ public class GuiUtils {
         anim.start();
     }
 
-    // 圆圈凝聚效果
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public static void animateRevealHide(
             final Context context, final View view,
@@ -59,7 +56,6 @@ public class GuiUtils {
         int cx = (view.getLeft() + view.getRight()) / 2;
         int cy = (view.getTop() + view.getBottom()) / 2;
         int initialRadius = view.getWidth();
-        // 与入场动画的区别就是圆圈起始和终止的半径相反
         Animator anim = ViewAnimationUtils.createCircularReveal(view, cx, cy, initialRadius, finalRadius);
         anim.setDuration(300);
         anim.setInterpolator(new AccelerateDecelerateInterpolator());
